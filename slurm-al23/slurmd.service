@@ -1,0 +1,13 @@
+[Unit]
+Description=Slurm node daemon
+After=network.target munge.service
+
+[Service]
+User=slurm
+Group=slurm
+ExecStart=/usr/sbin/slurmd
+PIDFile=/var/run/slurmd.pid
+
+[Install]
+WantedBy=multi-user.target
+EOF
