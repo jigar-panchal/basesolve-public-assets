@@ -10,4 +10,3 @@ PIDFile=/var/run/slurmctld.pid
 
 [Install]
 WantedBy=multi-user.target
-EOF
